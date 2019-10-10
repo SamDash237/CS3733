@@ -1,0 +1,33 @@
+1.) I mainly received help from the CS Lab tutors in figuring out the extra credit portion of the assignment.
+2.) I do not think that everything I did is correct because the second test for part 3 produces a different md5sum output
+than what Dr. Zhu described in his email to the class.
+3.) Everything before assign3part3 128 4096 2048 part2sequence is working as expected. As for the second test in Part 3,
+it still returns the total page faults and does not seg fault.
+4.)Part 3 was the most challenging segment of this particular project.
+5.)
+Part 1:
+fox01:~/cs3733/assign3> cc -o assign3part1 assign3part1.c
+fox01:~/cs3733/assign3> assign3part1 part1sequence
+fox01:~/cs3733/assign3> md5sum output-part1
+ceabc02825a5b908e474b053074ab53c  output-part1
+
+Part 2:
+fox01:~/cs3733/assign3> gcc -o assign3part2 assign3part2.c phypages.c pagetable.c
+fox01:~/cs3733/assign3> assign3part2 part2sequence
+Total page faults: 3210
+fox01:~/cs3733/assign3> md5sum output-part2
+c95b27848ae8d4354d87678d075001f7  output-part2
+
+Part 3:
+fox01:~/cs3733/assign3> cc -o assign3part3 assign3part3.c -lm phypages.c pagetable.c
+fox01:~/cs3733/assign3> assign3part3 256 4096 1024 part2sequence
+Total page faults: 3324
+fox01:~/cs3733/assign3> md5sum output-part3
+d34ec1b7d6aaa8d6eb093b9b95c8e094  output-part3
+
+fox01:~/cs3733/assign3> assign3part3 128 4096 2048 part2sequence
+Total page faults: 2130
+fox01:~/cs3733/assign3> md5sum output-part3
+87807c742d573a107fa6041e50dc957c  output-part3
+I believe the first half of this implementation is correct because the md5sum of the output matches what the professor 
+described in his email to the class. However, the second md5sum iteration does not match.
