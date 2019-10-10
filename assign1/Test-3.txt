@@ -1,0 +1,12 @@
+fox01:~/cs3733/assign1> make run3
+assign1 4 8 7 3 6 1 2
+Assignment 1 was written by Sam Dash
+inputs: 4 8 7 3 6 1 2
+
+Part 0
+RRRRRRRRwwwwwwwRRR
+rrrrrrrrRRRRRRwrrrRR
+0
+11
+5.5
+0.95000

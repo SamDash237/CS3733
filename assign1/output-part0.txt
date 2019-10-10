@@ -1,0 +1,10 @@
+Assignment 1 was written by Sam Dash
+inputs: 0 2 4 6 7 8 9
+
+Part 0
+RRwwwwwRRRRRRRRR
+rrRRRRwwwwwwwwrrRRRRRRR
+0
+4
+2.0
+0.95652

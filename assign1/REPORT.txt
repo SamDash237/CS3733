@@ -1,0 +1,13 @@
+1. I spoke with the tutors in the CS lab to get an idea of how to do pslibrary.c.
+2. I believe that everything I did is correct.
+3. N/A
+4. void fcfsa in pslibrary.c was particularly challenging to make.
+5. fox01:~/cs3733/assign1> cc -o runalla runalla.c pslibrary.c
+fox01:~/cs3733/assign1> runalla
+fox01:~/cs3733/assign1> ls -l fcfsa.all
+-rw------- 1 eeo072 students 44344517 Feb  7 20:50 fcfsa.all
+fox01:~/cs3733/assign1> wc fcfsa.all
+ 2000001  2000003 44344517 fcfsa.all
+fox01:~/cs3733/assign1> md5sum fcfsa.all
+ca6f6876a9d3049247ebc1146cf9be8d  fcfsa.all
+fox01:~/cs3733/assign1>
