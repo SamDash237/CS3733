@@ -1,0 +1,7 @@
+1. I sought out the assistance of the tutors in the CS lab. They explained how to get driver2.c to read.
+
+2. I am not sure that everything I did is correct.
+
+3. I am most unsure about driver1_output.txt, as that returns everything that I enter.
+
+4. This was a challenging assignment. Though next time, making only one driver might be sufficient.
