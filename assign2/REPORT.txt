@@ -1,0 +1,352 @@
+1. I spoke with the tutors in the CS lab for assistance with my makefile
+2. I believe that everything I did is correct.
+3. N/A
+4. I was not certain as to what specific scheduling quizzes the instructions for Part 4 were referring to.
+5. Below are the inputs from the six tests and two examples from Assignment 1, and the Part 4 tie test for RR. Below those are the outputs for Part 5.
+fox01:~/cs3733/assign2> make run1
+assign2 3 8 7 3 6 3 2
+Assignment 1 was written by Sam Dash
+inputs: 3 8 7 3 6 3 2
+
+FCFS
+RRRRRRRRwwwwwwwRRR
+rrrrrrrrRRRRRRwwwrRR
+0
+9
+4.5
+0.95000
+
+SJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwrrrrrRR
+6
+5
+5.5
+0.79167
+
+PSJF
+rrrrrrRRRrrRRRRRwwwwwwwRRR
+RRRRRRwwwRR
+8
+0
+4.0
+0.73077
+
+RR
+RRRrrrRRRrrrRRwwwwwwwRRR
+rrrRRRrrrRRRwwwRR
+6
+6
+6.0
+0.79167
+fox01:~/cs3733/assign2> make
+make: Nothing to be done for `all'.
+fox01:~/cs3733/assign2> make run2
+assign2 3 8 7 3 6 7 2
+Assignment 1 was written by Sam Dash
+inputs: 3 8 7 3 6 7 2
+
+FCFS
+RRRRRRRRwwwwwwwRRR
+rrrrrrrrRRRRRRwwwwwwwRR
+0
+8
+4.0
+0.82609
+
+SJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwwwwwrRR
+6
+1
+3.5
+0.79167
+
+PSJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwwwwwrRR
+6
+1
+3.5
+0.79167
+
+RR
+RRRrrrRRRrrrRRwwwwwwwRRR
+rrrRRRrrrRRRwwwwwwwRR
+6
+6
+6.0
+0.79167
+fox01:~/cs3733/assign2>
+fox01:~/cs3733/assign2> make run3
+assign2 4 8 7 3 6 1 2
+Assignment 1 was written by Sam Dash
+inputs: 4 8 7 3 6 1 2
+
+FCFS
+RRRRRRRRwwwwwwwRRR
+rrrrrrrrRRRRRRwrrrRR
+0
+11
+5.5
+0.95000
+
+SJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwrrrrrrrRR
+6
+7
+6.5
+0.79167
+
+PSJF
+rrrrrrRrrRRRRRRRwwwwwwwRRR
+RRRRRRwRR
+8
+0
+4.0
+0.73077
+
+RR
+RRRRrrrrRRRRwwwwwwwRRR
+rrrrRRRRrrrrRRwRR
+4
+8
+6.0
+0.86364
+fox01:~/cs3733/assign2>
+fox01:~/cs3733/assign2> make run4
+assign2 3 3 3 4 2 1 2
+Assignment 1 was written by Sam Dash
+inputs: 3 3 3 4 2 1 2
+
+FCFS
+RRRwwwRRRR
+rrrRRwrrrrRR
+0
+7
+3.5
+0.91667
+
+SJF
+rrRRRwwwRRRR
+RRwrrRR
+2
+2
+2.0
+0.91667
+
+PSJF
+rrRRRwwwRRRR
+RRwrrRR
+2
+2
+2.0
+0.91667
+
+RR
+RRRwwwRRRrrR
+rrrRRwrrrRR
+2
+6
+4.0
+0.91667
+fox01:~/cs3733/assign2> make run5
+assign2 3 3 2 3 2 1 2
+Assignment 1 was written by Sam Dash
+inputs: 3 3 2 3 2 1 2
+
+FCFS
+RRRwwRRR
+rrrRRwrrRR
+0
+5
+2.5
+1.00000
+
+SJF
+rrRRRwwRRR
+RRwrrRR
+2
+2
+2.0
+1.00000
+
+PSJF
+rrRRRwwRRR
+RRwrrRR
+2
+2
+2.0
+1.00000
+
+RR
+RRRwwRRR
+rrrRRwrrRR
+0
+5
+2.5
+1.00000
+fox01:~/cs3733/assign2> make run6
+assign2 3 5 2 5 4 1 1
+Assignment 1 was written by Sam Dash
+inputs: 3 5 2 5 4 1 1
+
+FCFS
+RRRRRwwrrRRRRR
+rrrrrRRRRwrrrrR
+2
+9
+5.5
+1.00000
+
+SJF
+rrrrRRRRRwwRRRRR
+RRRRwrrrrR
+4
+4
+4.0
+0.93750
+
+PSJF
+rrrrRrRRRRwwRRRRR
+RRRRwR
+5
+0
+2.5
+0.88235
+
+RR
+RRRrrrRRwwRRRrRR
+rrrRRRrrRwrrrR
+4
+8
+6.0
+0.93750
+fox01:~/cs3733/assign2> make runex1
+assign2 0 4 2 7 3 6 5
+Assignment 1 was written by Sam Dash
+inputs: 0 4 2 7 3 6 5
+
+FCFS
+RRRRwwrRRRRRRR
+rrrrRRRwwwwwwrRRRRR
+1
+5
+3.0
+1.00000
+
+SJF
+rrrRRRRwwrrrrrRRRRRRR
+RRRwwwwwwRRRRR
+8
+0
+4.0
+0.90476
+
+PSJF
+rrrRRRRwwrrrrrRRRRRRR
+RRRwwwwwwRRRRR
+8
+0
+4.0
+0.90476
+
+RR
+RRRRwwrRRRRRRR
+rrrrRRRwwwwwwrRRRRR
+1
+5
+3.0
+1.00000
+fox01:~/cs3733/assign2> make runex2
+assign2 0 4 9 5 6 3 7
+Assignment 1 was written by Sam Dash
+inputs: 0 4 9 5 6 3 7
+
+FCFS
+RRRRwwwwwwwwwRRRRR
+rrrrRRRRRRwwwrrrrrRRRRRRR
+0
+9
+4.5
+0.88000
+
+SJF
+RRRRwwwwwwwwwRRRRR
+rrrrRRRRRRwwwrrrrrRRRRRRR
+0
+9
+4.5
+0.88000
+
+PSJF
+RRRRwwwwwwwwwRRRRR
+rrrrRRRRRRwwwrrrrrRRRRRRR
+0
+9
+4.5
+0.88000
+
+RR
+RRRRwwwwwwwwwRRRRR
+rrrrRRRRRRwwwrrrrrRRRRRRR
+0
+9
+4.5
+0.88000
+fox01:~/cs3733/assign2> make runtie
+assign2 3 1 1 4 1 3 1
+Assignment 1 was written by Sam Dash
+inputs: 3 1 1 4 1 3 1
+
+FCFS
+RwRRRR
+rRwwwrR
+0
+2
+1.0
+1.00000
+
+SJF
+RwRRRR
+rRwwwrR
+0
+2
+1.0
+1.00000
+
+PSJF
+RwRRRR
+rRwwwrR
+0
+2
+1.0
+1.00000
+
+RR
+RwRRRR
+rRwwwrR
+0
+2
+1.0
+1.00000
+
+gnu017:~/cs3733/assign2> cc -o runall runall.c pslibrary.c
+gnu017:~/cs3733/assign2> runall
+gnu017:~/cs3733/assign2> ls -l *.all
+-rw------- 1 eeo072 students 44344517 Mar  5 17:23 fcfs.all
+-rw------- 1 eeo072 students 42267266 Mar  5 17:23 psjf.all
+-rw------- 1 eeo072 students 46409196 Mar  5 17:23 rr.all
+-rw------- 1 eeo072 students 43243801 Mar  5 17:23 sjf.all
+gnu017:~/cs3733/assign2> wc *.all
+  2000001   2000003  44344517 fcfs.all
+  2000001   2000003  42267266 psjf.all
+  2000001   2000003  46409196 rr.all
+  2000001   2000003  43243801 sjf.all
+  8000004   8000012 176264780 total
+gnu017:~/cs3733/assign2> md5sum *.all
+ca6f6876a9d3049247ebc1146cf9be8d  fcfs.all
+385126a67b78e5c4c8b1351961de0da6  psjf.all
+0d9f1d3a30869d4e5b64f521f9ac7910  rr.all
+23f74dc6923b9601d2d54bbe0287278b  sjf.all
